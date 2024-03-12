@@ -22,4 +22,4 @@ let lastLetter = (x) => {
     return x.charAt(x.length - 1);
 }
 
-console.log(lastLetter("hello"))
+console.log(lastLetter("hello"));
