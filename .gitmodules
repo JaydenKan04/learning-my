@@ -1,0 +1,3 @@
+[submodule "PHP-Tutorial"]
+	path = PHP-Tutorial
+	url = git@github.com:JaydenKan04/PHP-Tutorial.git
