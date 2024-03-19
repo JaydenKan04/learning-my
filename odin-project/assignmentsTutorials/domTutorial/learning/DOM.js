@@ -1,22 +1,10 @@
-// const body = document.body;
+let btn = document.querySelector('#btn');
 
-// const div = document.createElement('div');
-// const strong = document.createElement('strong');
-// strong.innerText = 'Hello World 2';
+btn.addEventListener('click', function(event) {
+    console.log('The button was clicked! 1');
+    event.stopPropagation();
+});
 
-// div.append(strong);
-// body.appendChild(div);
-
-const body = document.body
-const div = document.querySelector('div')
-const spanHi = document.querySelector('#hi')
-const spanBye = document.querySelector('#bye')
-
-// div.removeChild(spanHi)
-
-//Can use method for getting attribute instead of getAttribute
-// console.log(spanHi.title);
-
-// console.log(spanHi.setAttribute('title','ssadad'))
-
-spanHi.style.color = "red"
+document.body.addEventListener('click',function(event) {
+    console.log('The body was clicked! 2');
+});
